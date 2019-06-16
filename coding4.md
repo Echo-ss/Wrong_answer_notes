@@ -6,11 +6,11 @@
 
     T = ['test1a', 'test2', 'test1b']     # Test 하는 그룹 리스트
     R = ['Ok', 'System Error', 'Ok']      # Test의 Result 값 리스트
-    Group_numbering_ilst = []             # Group_numbering_ilst
+    Group_numbering_ilst = []             # Group_numbering_list
     okG = []                              # OK_Group 리스트
 
 
-    for i in range(1, len(T)+1):          # 길이만큼 최대 그룹있다 가정하에 Group_numbering_ilst
+    for i in range(1, len(T)+1):          # 길이만큼 최대그룹 수나올 수 있다는 가정하에 Group_numbering_ilst
         Group_numbering_ilst.append(str(i))
     
     
