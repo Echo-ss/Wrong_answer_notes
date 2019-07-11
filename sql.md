@@ -9,7 +9,7 @@
 	                    FROM ponds P, specieds S
 	                    WHERE CASE WHEN temp_preferences='+' THEN P.temperature >= temp_limit
 	                              ELSE P.temperature <= temp_limit
-	                              END= 't') SP 
+	                              END) SP 
 	      WHERE D.pond_id = SP.pond_id AND D.species_id = SP.species_id
 	      GROUP BY D.pond_id;
 
